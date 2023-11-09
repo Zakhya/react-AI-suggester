@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
 import Job from "../models/JobModel.js";
 import { NotFoundError } from "../errors/customErrors.js";
+import { StatusCodes } from "http-status-codes";
 
 let jobs = [
   { id: nanoid(), company: "apple", position: "front-end developer" },
